@@ -8,7 +8,9 @@ rm src/.keep # Remove the keep file or Compose will yell at you
 composer create-project laravel/laravel . # Install a fresh copy of Laravel. (You can move your own.)
 docker-compose build && docker-compose up -d # Build and start the containers. (You can use the start.sh file on the root directory.)
 ```
-// root laravel image here
+
+![Laravel Root](https://user-images.githubusercontent.com/84069271/149656643-70e77b8b-964b-4c67-b340-6fa64e110d4e.png)
+
 
 Now edit simplelaravelcompose/src/.env and modify this:
 ```env
@@ -38,4 +40,4 @@ For example, we would execute migrations like this:
 docker-compose exec php php /var/www/html/artisan migrate
 ```
 
-// laravel migration here
+![Laravel migration](https://user-images.githubusercontent.com/84069271/149656652-13e85d68-88cd-442b-9dd5-eb87c8bb857e.png)
